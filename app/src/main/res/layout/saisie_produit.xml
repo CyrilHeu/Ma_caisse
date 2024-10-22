@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380px"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="10px"
+    android:paddingLeft="10px"
+    >
+    <!-- 250 pour l'instant -->
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:text="Nom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etPrix"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="Prix" />
+
+        <TextView
+            android:id="@+id/tvEuro"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:text="€"
+            android:textSize="30dp" />
+
+        <Spinner
+            android:id="@+id/SpinCouleur"
+            android:layout_width="50px"
+            android:layout_height="match_parent">
+
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLaddOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btnAddOption"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="5px"
+
+            android:background="@drawable/baseline_library_add_24">
+
+        </ImageButton>
+        <TextView
+            android:id="@+id/txtAddOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajout option"
+            android:layout_gravity="center">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_marginTop="10px">
+        <!--<Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler" />-->
+        <Button
+            android:id="@+id/btnSuppr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="Supprimer" />
+        <Button
+            android:id="@+id/btnValid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:text="Enregistrer" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

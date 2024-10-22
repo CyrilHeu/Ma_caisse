@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="15dp"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/tvKeySuppression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24pt"
+                android:layout_gravity="center"
+                android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+
+            <Button
+                    android:id="@+id/btn1_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="1"/>
+
+            <Button
+                    android:id="@+id/btn2_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="2"/>
+
+            <Button
+                    android:id="@+id/btn3_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="3"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+
+            <Button
+                    android:id="@+id/btn4_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="4"/>
+
+            <Button
+                    android:id="@+id/btn5_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="5"/>
+
+            <Button
+                    android:id="@+id/btn6_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="6"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+
+            <Button
+                    android:id="@+id/btn7_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="7"/>
+
+            <Button
+                    android:id="@+id/btn8_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="8"/>
+
+            <Button
+                    android:id="@+id/btn9_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="9"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75px">
+
+            <Button
+                    android:id="@+id/btnCancel_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="5pt"
+                    android:layout_weight="1"
+                    android:text="Effacer"/>
+
+            <Button
+                    android:id="@+id/btn0_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:text="0"/>
+
+            <Button
+                    android:id="@+id/btnHide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:text="C"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <EditText
+                    android:id="@+id/et_justification_suppression"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Saisissez ici votre justification de suppression ou choisissez parmis les choix proposés."
+                    android:textSize="6pt"
+                    android:layout_weight="5"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/edittext_background_commentaire_table">
+
+            </EditText>
+            <Spinner
+                     android:id="@+id/spinChoixJustificationSuppr"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="3"
+                     android:layout_marginTop="3sp"
+                     android:background="@drawable/edittext_background_commentaire_table">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/btnValidationSuppr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:layout_weight="1"
+                    android:text="validation"
+                    android:textSize="12pt" />
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

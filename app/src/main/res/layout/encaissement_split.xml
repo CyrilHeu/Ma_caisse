@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/LLDiviseur"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutDiviser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restant" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPaiementMoinsSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="-">
+
+        </Button>
+        <TextView
+            android:id="@+id/edtNbSplit"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="14pt"
+            android:text="2"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            >
+        </TextView>
+        <Button
+            android:id="@+id/btnPaiementPlusSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+">
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prix par personne : "
+            android:textSize="12pt"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPaiementPrixSplited"
+            android:text="€"
+            android:textSize="12pt">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LLprixclientsplited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Un client devra régler : "
+            android:textSize="12pt"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPaiementPrixSplited2"
+            android:text="€"
+            android:textSize="12pt">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
